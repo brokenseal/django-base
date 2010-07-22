@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title|escape }} | {% trans 'example.com admin' %}{% endblock %}
+
+{% block branding %}
+	<h1 id="site-name">{% trans 'example.com administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}
+	{% if user.is_authenticated and user.is_staff %}
+		<a href="/rosetta/" title="{% trans 'Translate this web site' %}" style="float:right;margin:0 10px 5px 0;">Rosetta</a>
+	{% endif %}
+{% endblock %}

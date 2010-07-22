@@ -1,0 +1,39 @@
+{% load i18n analytics %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it" >
+<head>
+	<title>{% block title %}example.com{% endblock %}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index,follow">
+	
+	<meta name="author" content="Brokenseal di Callegari Davide" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="copyright" content="2006 - {% now "Y" %} Brokenseal" />
+	
+	<!--link title="Rss Feed" type="application/rss+xml" href="" rel="alternate"/-->
+	
+	<!--link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}" />
+	
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-1.4.2.min.js"> </script>
+	{% block extrastyle %}{% endblock %}
+	{% block extrahead %}{% endblock %}
+</head>
+<body>
+	<div class="container_16">
+		<div id="branding">
+			<ul id="menu">
+			</ul>
+		</div>
+		<h1 class="grid_16"></h1>
+		<div id='content' class="grid_11">
+			{% block content %}{% endblock %}
+		</div>
+		<div id="right-column" class="grid_5">
+		<p id='footer' class="grid_16">
+		</p>
+	</div>
+	{% analytics %}
+</body>
+</html>

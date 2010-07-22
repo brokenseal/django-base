@@ -1,0 +1,11 @@
+django
+south
+git+http://github.com/robhudson/django-debug-toolbar.git
+svn+http://django-rosetta.googlecode.com/svn/trunk
+git+http://github.com/kron4eg/django-localeurl.git
+git+http://github.com/jezdez/django-robots.git
+git+http://github.com/clintecker/django-google-analytics.git
+svn+http://django-diario.googlecode.com/svn/trunk
+svn+http://django-tagging.googlecode.com/svn/trunk
+git+http://github.com/initcrash/transdb.git
+git+http://github.com/matthiask/feincms.git

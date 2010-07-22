@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block extra-title %}{% blocktrans %}Server error{% endblocktrans %} (500){% endblock %}
+
+{% block content %}
+<h1>{% blocktrans %}Server error{% endblocktrans %} <em>(500)</em></h1>
+<p>{% blocktrans %}It looks like the server encountered an error. Even though it could be our fault I'm sure it's yours.{% endblocktrans %}</p>
+
+{% endblock %}

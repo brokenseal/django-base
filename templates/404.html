@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block extra-title %} - {% blocktrans %}No way! I can't find the page you were looking for!{% endblocktrans %}{% endblock %}
+
+{% block content %}
+	<h2>{% blocktrans %}No way! I can't find the page you were looking for!{% endblocktrans %}</h2>
+	
+	<p>{% blocktrans %}Too bad. For you.{% endblocktrans %}</p>
+{% endblock %}
